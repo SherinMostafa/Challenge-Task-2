@@ -1,0 +1,778 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #7971ea;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0px;
+}
+
+hr {
+    margin: 0px;
+    
+    border: 0px;
+    border-bottom: 1px solid #f3f3f4;
+}
+
+.Dash {
+    width: 40px;
+
+    border: 1px solid #7971ea;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .First_Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    
+    height: 45px;
+
+    margin: 0px 8%;
+    padding: 40px 0px;
+}
+
+nav .First_Nav .Search {
+    height: 45px;
+
+    position: relative;
+}
+
+nav .First_Nav .Search .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px ;
+    color: #8c92a0;
+}
+
+nav .First_Nav .Search input {
+    width: 160px;
+    height: 100%;
+
+    padding-left: 30%;
+
+    border: 0px;
+
+    transition: padding-left 0.5s ease;
+}
+
+nav .First_Nav .Search input::placeholder {
+    font-size: 16px;
+}
+
+nav .First_Nav .Search input:focus {
+    outline: none;
+
+    font-size: 16px;
+
+    padding-left: 24%;
+}
+
+nav .First_Nav .Icons {
+    position: relative;
+}
+
+nav .First_Nav .Icons a .material-icons {
+    margin-left: 10px;
+
+    color: #868995;
+    font-size: 20px;
+
+    transition: color 0.5s ease;
+}
+
+nav .First_Nav .Icons a .material-icons:hover {
+    color: #3d3f45;
+}
+
+nav .First_Nav .Icons span {
+    position: absolute;
+    bottom: 22px;
+    left: 90px;
+
+    width: 24px;
+    height: 24px;
+
+    text-align: center;
+    line-height: 24px;
+
+    border-radius: 50%;
+    
+    color: #fff;
+    font-size: 12px;
+
+    background: #7971ea;
+}
+
+nav .Logo h1 {
+    color: #25262a;
+    font-size: 18px;
+    font-weight: 400;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    padding: 10px;
+
+    border: 2px solid #25262a;
+}
+
+nav .Second_Nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 0px;
+}
+
+nav .Second_Nav a {
+    color: #25262a;
+    font-size: 12px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding: 10px 0px 10px 30px;
+
+    position: relative;
+
+    transition: color 0.5s ease;
+}
+
+nav .Second_Nav a .material-icons {
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    transform: translate(-50%, -50%);
+}
+
+nav .Second_Nav .Edit {
+    padding: 10px 20px 10px 30px;
+}
+
+nav .Second_Nav a:hover {
+    color: #7971ea;
+}
+
+nav .Second_Nav #Active {
+    color: #7971ea;
+}
+
+nav .Third_Nav {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f8f9fa;
+
+    padding: 18px 80px;
+}
+
+nav .Third_Nav a {
+    font-weight: 400;
+
+    transition: all 0.3s ease-in-out;
+}
+
+nav .Third_Nav a:hover {
+    color: #3a2ee0;
+}
+
+nav .Third_Nav span {
+    color: #8c92a0;
+}
+
+main {
+    padding: 80px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+main aside {
+    width: 255px;
+    
+    margin: 0px 15px;
+}
+
+main aside div {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+
+    padding: 24px;
+
+    margin-bottom: 24px;
+}
+
+main aside div h2 {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 16px;
+
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+main aside .First_Aside a {
+    font-size: 15px;
+
+    margin-bottom: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    transition: all 0.3s ease-in-out;
+}
+
+main aside .First_Aside a:hover {
+    color: #3a2ee0;
+}
+
+main aside .First_Aside span {
+    color: black;
+    font-size: 16px;
+}
+
+main aside .First_Div, .Second_Div, .Third_Div {
+    margin-bottom: 40px;
+}
+
+main aside .Second_Aside .First_Div input {
+    width: 100%;
+}
+
+main aside .Second_Aside .First_Div label {
+    color: #495057;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main aside .Second_Aside .Second_Div, .Third_Div {
+    display: flex;
+    flex-direction: column;
+}
+
+main aside .Second_Aside .Second_Div a {
+    margin-bottom: 10px;
+
+    color: black;
+    font-size: 16px;
+
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+}
+
+main aside .Second_Aside .Third_Div {
+    border: none;
+    padding: 0;
+}
+
+main aside .Second_Aside .Third_Div a {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+main aside .Second_Aside .Third_Div a .Color {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    margin-right: 16px;
+}
+
+main aside .Second_Aside .Third_Div a .Red {
+    background-color: #dc3545;
+}
+
+main aside .Second_Aside .Third_Div a .Green {
+    background-color: #28a745;
+}
+main aside .Second_Aside .Third_Div a .Blue {
+    background-color: #17a2b8;
+}
+main aside .Second_Aside .Third_Div a .Purple {
+    background-color: #7971ea;
+}
+
+main aside .Second_Aside .Third_Div a span {
+    color: black;
+    font-size: 16px;
+}
+
+main section {
+    width: 800px;
+    
+    margin: 0px 15px;
+}
+
+main section .First_Section {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 8px;
+}
+
+main section .First_Section h2 {
+    font-size: 18px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+/* Start Button */
+
+main section .First_Section .Button {
+    display: flex;
+}
+main section .First_Section .Button div {
+    position: relative;
+    
+    margin-left: 10px;
+}
+
+main section .First_Section .Button div select {
+    border: 1px solid #e6e7e9;
+    border-radius: 3px;
+    
+    background-color: #e6e7e9;
+    
+    font-size: 12px;
+    
+    text-transform: uppercase;
+    
+    appearance: none;
+    position: relative;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+main section .First_Section .Button div select:hover {
+    box-shadow: 0 5px 20px -7px rgb(0 0 0 / 90%) !important;
+    top: -2px;
+}
+
+main section .First_Section .Button div select:active {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+main section .First_Section .Button div select:focus {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+    
+    outline: none
+}
+
+main section .First_Section .Button div select option {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+    
+    background-color: white;
+    border: 0;
+}
+
+main section .First_Section div .Button1 {
+    padding: 16px 28px 16px 20px;
+}
+
+main section .First_Section div .Button2 {
+    padding: 16px 0px 16px 20px;
+}
+
+
+main section .First_Section .Button span {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    
+    pointer-events: none;
+}
+/* End Button */
+
+main section .Second_Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin-top: 60px;
+
+    flex-wrap: wrap;
+}
+
+main section .Second_Section .Card {
+    width: 244px;
+
+    margin: 10px 5px;
+
+    box-shadow: 0 0 30px -10px rgb(0 0 0 / 10%);
+    border: 1px solid #dee2e6;
+    
+    background-color: #fff;
+}
+
+main section .Second_Section .Card img {
+    width: 100%;
+}
+
+main section .Second_Section .Card div {
+    text-align: center;
+    margin: 25px 25px 50px;
+
+    line-height: 1.7;
+}
+
+main section .Second_Section .Card div a {
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: all 0.3s ease-in-out;
+}
+
+main section .Second_Section .Card div a:hover {
+    color: #3a2ee0;
+}
+
+main section .Second_Section .Card div p {
+    color: #8c92a0;
+    
+    margin: 0px;
+}
+
+main section .Second_Section .Card div span {
+    color: #7971ea;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main section .Third_Section {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 60px;
+}
+
+main section .Third_Section a {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    margin-left: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    line-height: 38px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+main section .Third_Section a:hover {
+    color: #3a2ee0;
+}
+
+main section .Third_Section span {
+    color: #fff;
+    background-color: #7971ea;
+    
+    border: none;
+    border-radius: 50%;
+
+    margin-left: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    line-height: 38px;
+}
+
+article .First_Article {
+    padding: 60px 0px;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+article .First_Article .Box {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article .First_Article .Box .Header {
+    font-size: 30px;
+    font-weight: 400;
+
+    margin: 16px 0px 40px;
+}
+
+article .First_Article a {
+    position: relative;
+
+    width: 350px;
+    height: 460px;
+
+    margin: 20px 15px;
+    overflow: hidden;
+}
+
+article .First_Article a img {
+    width: 350px;
+
+    transition: transform 0.5s ease-in-out;
+    filter: brightness(60%);
+}
+
+article .First_Article a:hover img {
+    transform: scale(1.1);
+}
+
+article .First_Article a div {
+    position: absolute;
+    bottom: 2%;
+    left: 8%;
+
+    width: 100%;
+}
+
+article .First_Article a div h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+article .First_Article a div h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer {
+    padding: 60px 0px;
+    line-height: 1.8;
+}
+
+footer .First_Footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    height: 450px;
+    margin: 0px 80px;
+}
+
+footer .First_Footer div h1 {
+    color: #25262a;
+    font-size: 20px;
+    font-weight: 450;
+
+    margin-bottom: 24px;
+}
+
+footer .First_Footer div ul {
+    list-style-type: none;
+
+    margin-top: 0px;
+    padding: 0px;
+}
+
+footer .First_Footer .First {
+    width: 480px;
+    margin-right: 60px;
+}
+
+footer .First_Footer .First div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .First_Footer .First div ul li {
+    margin-bottom: 10px;
+}
+
+footer .First_Footer .First div ul li a {
+    color: #5c626e;
+
+    transition: all 0.3s ease-in-out;
+}
+
+footer .First_Footer .First div ul li a:hover {
+    color: #7971ea;
+}
+
+footer .First_Footer .Second img {
+    width: 250px;
+
+    border-radius: 3px;
+}
+
+footer .First_Footer .Second h2 {
+    color: #7971ea;
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-top: 16px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+footer .First_Footer .Second h2:hover {
+    color: #3a2ee0;
+}
+
+footer .First_Footer .Second h4 {
+    color: #737b8a;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .First_Footer .Second div {
+    display: flex;
+    align-items: center;
+}
+
+footer .First_Footer .Second div .material-icons {
+    color: #7971ea;
+    font-size: 22px;
+
+    margin-right: 16px;
+}
+
+footer .First_Footer .Second div p {
+    color: #25262a;
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+footer .First_Footer .Second div a {
+    color: #5c626e;
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+footer .First_Footer .Second div a:hover {
+    color: #7971ea;
+}
+
+footer .First_Footer .Second form {
+    margin-top: 80px;
+}
+
+footer .First_Footer .Second form label {
+    color: #25262a;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer .First_Footer .Second form div {
+    margin-top: 10px;
+
+    height: 50px;
+    width: 240px;
+
+    position: relative;
+}
+
+footer .First_Footer .Second form div input {
+    height: 100%;
+    width: 100%;
+
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+footer .First_Footer .Second form div input:focus {
+    color: #495057;
+    background-color: #fff;
+
+    outline: 0px;
+    border-color: #7971ea;
+
+    padding-left: 10px;
+}
+
+footer .First_Footer .Second form div input::placeholder {
+    font-size: 16px;
+}
+
+footer .First_Footer .Second form div button {
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    transform: translate(-50%, -50%);
+
+    padding: 12px 20px;
+
+    background-color: #7971ea;
+    border: 1px solid #7971ea;
+    border-radius: 4px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+footer .First_Footer .Second form div button:hover {
+    box-shadow: 0 5px 20px -7px rgb(0, 0, 0, 0.9);
+    background-color: #5a50e5;
+}
+
+footer p {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    color: #8c92a0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer p a {
+    transition: all 0.3s ease-in-out;
+}
+
+footer p a:hover {
+    color: #4f45e3;
+}
